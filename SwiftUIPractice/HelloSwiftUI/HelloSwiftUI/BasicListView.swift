@@ -44,6 +44,13 @@ struct BasicListView: View {
             Text("\($0)") // trailing closure의 first parameter
         }
         
+        
+        List(0..<100) {
+            
+                Text("\($0)") + Text("\($0)")
+            
+        }
+        
         // RandomAccessCollection
         // id 매개변수 : Hashable 프로토콜을 준수하는 프로퍼티 지정 가능
         // - Hashable을 준수하는 경우 \.self 로 지정
